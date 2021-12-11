@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./javascripts/javascript.js"></script>
+    <title>Mundo Animal</title>
+</head>
+<body>
+<div id="container">
+
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#hero" class="active">Inicio</a>
+            <a href="#introduction">Nosotros</a>
+            <a href="#perros">Perros</a>
+            <a href="#gatos">Gatos</a>                        
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+    </nav>
+
+ <!--Aquí irá la imagen grande de fondo y la presentación del sitio-->
+<section id="hero">
+    <h1>Mundo Animal</h1>
+    <a href="#introduction"> <p id="calltoaction">¡Conocenos!</p></a>
+    <!--Meto aquí la flecha para volver arriba porque es la mas limpia, pero en realidad da igual -->
+    <a href="#container"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+<!--esta sección tiene un texto y una imagen a la izquierda, que se comporta de manera responsive-->
+</section>
+
+
+<section id="introduction">
+    <h1>Nosotros</h1>
+    <img id="perroygato" src="./imagenes/nosotros.jpg" alt="perros y gatos"><!--imagen de barco que acompaña al texto-->
+    <p>¡Bienvenidos a Mundo Animal!</p>
+
+     <p>Los perros y los gatos se han convertido en los animales de compañía por excelencia en los hogares de todo el mundo. </p>    
+
+    <p> Estamos especializados en estos animales. Te enseñaremos los cuidados esenciales de ellos.  </p>  
+        
+    <p>Contamos con mas de 30 años de experiencia desde 1987. </p>
+        
+   
+</section>
+
+<!--seccion que divide el contenido en dos columnas utilizando la propiedad float-->
+<!--esta no venía en el examen original, es una explicación de clase-->
+<section id="perros">
+    <div class="mitad" id="izquierda">
+        <h1>Perros</h1>
+
+             <button class="accordion">Cuidados</button>
+             <div class="panel">
+               <p>Algunos cuidados que necesitará tu perro serán: </p>
+               <ul>
+                <li>Hazle hacer ejercicio.</li>
+                <li>Educa a tu perro.</li>
+                <li>Premia su buen comportamiento.</li>
+                <li>Visitas al veterinario.</li>
+                <li>Alimentación saludable</li>
+              </ul> 
+             </div>
+             
+             <button class="accordion">Productos</button>
+             <div class="panel">
+              <div class="cuarto">
+                <img src="./imagenes/champuperro.jpg" alt="Champú perro">
+                <h2> <a href="https://www.tiendanimal.es/champu-beaphar-especial-pieles-sensibles-para-perros-p-6402.html"> Champú</a></h2>
+            </div>
+            <div class="cuarto">
+                <img src="./imagenes/galletasperros.jpg" alt="Galletas para perros">
+                <h2><a href="https://www.mascotaplanet.com/es/comprar-galletas-para-perros-jamn.html">Galletas</a> </h2>
+            </div>
+            <div class="cuarto">
+                <img src="./imagenes/jugueteperro.jpg" alt="Juguetes para perros">
+                <h2> <a href="https://www.amazon.com/-/es/Juguetes-masticables-juguetes-adiestramiento-dispensaci%C3%B3n/dp/B0836MK75Y">Juguete</a> </h2>
+            </div>
+            <div class="cuarto">
+                <img src="./imagenes/correaperro.jpg" alt="Correa para perro">
+                <h2> <a href="https://www.amazon.com/-/es/Conjunto-cachorros-reflectante-ajustable-peque%C3%B1os/dp/B0876ZTM3H">Correa</a> </h2>
+            </div>
+             </div>
+            
+    </div>
+    <div class="mitad" id="derecha">
+        <img id="perroderecha" src="./imagenes/perros.jpg" alt="una imagen de un perro">    </div>
+    <div class="resetear"><!---div para cortar el comportamiento float left--></div>
+</section>
+
+
+<section id="gatos">
+  <div class="mitad" id="izquierda">
+    <h1>Gatos</h1>
+
+         <button class="accordion">Cuidados</button>
+         <div class="panel">
+           <ul>
+            <li>Alimentación 
+              <p>Puedes alimentar a tu gato con pienso, alimentos balanceados secos o alimento húmedo. Existen multitud de sabores, presentaciones y marcas.</p></li>
+            <li>Salud 
+              <p>Entre los cuidados de un gato son imprescindibles la vacunación y desparasitación siguiendo las indicaciones del veterinario. </p>
+            </li>
+            <li>Cepillado
+              <p>Cepilla frecuentemente a tu gato para eliminar su pelo muerto y dale malta felina para evitar la formación de bolas de pelo.</p>
+            </li>
+          </ul> 
+         </div>
+         
+         <button class="accordion">Productos</button>
+         <div class="panel">
+          <div class="cuarto">
+            <img src="./imagenes/comidagato.jpg" alt="Comida">
+            <h2> <a href="https://www.amazon.com/-/es/Comida-h%C3%BAmeda-Purina-Friskies-tesoros/dp/B006FTJ0NI"> Comida</a></h2>
+        </div>
+        <div class="cuarto">
+            <img src="./imagenes/cepillogato.jpg" alt="Cepillo para gato">
+            <h2><a href="https://www.amazon.es/CELEMOON-Cepillo-Silicona-masajear-ara%C3%B1azos/dp/B01EI7ZVCC">Cepillo</a> </h2>
+        </div>
+        <div class="cuarto">
+            <img src="./imagenes/arenagato.jpg" alt="Arena para gato">
+            <h2> <a href="https://www.thepetshopboys.es/comprar/brit-ultra-fresco-arena-para-gatos/">Arena</a> </h2>
+        </div>
+        <div class="cuarto">
+            <img src="./imagenes/juguetegato.jpg" alt="Juguete para gato">
+            <h2> <a href="https://www.perrogato.net/juguetes-gatos/7598-rascador-tree-longe-deluxe-gris-y-rojo-70-cm-juguete-para-gatos-4018653943915.html">Jugute</a> </h2>
+        </div>
+         </div>
+        
+</div>
+<div class="mitad" id="derecha">
+    <img id="perroderecha" src="./imagenes/gato.jpg" alt="una imagen de un gato">    </div>
+<div class="resetear"><!---div para cortar el comportamiento float left--></div>
+</section>
+
+  <footer id=footer class="section">
+          <div id=pie>
+           
+            <div class="columna">
+              <h3>Sobre mí</h3>
+              <p>Autor: María Eugenia Sánchez</p>
+              <p>IES Campanillas 1 DAW</p>
+              <p>12 de diciembre de 2021</p>
+              
+            </div>
+        
+        </footer>
+    </div>
+
+</div> 
+<!--el javascript del accordion lo tengo que poner aquí al final-->   
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+</body>
+</html>

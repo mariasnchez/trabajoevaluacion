@@ -1,0 +1,266 @@
+/****** hoja de estilo del trabajo de la evaluación*****/
+
+/**************************************************estilo general**********************************************/
+@font-face {
+    font-family: runas;
+    src: url("../fuentes/JanturTypeThin.ttf");
+}
+@font-face {
+    font-family: texto;
+    src: url("../fuentes/NoticiaTextRegular.ttf");
+}
+h1 {letter-spacing: 0.1em;}
+html{scroll-behavior:smooth;
+    }
+
+
+body{background-color: rgb(165, 110, 110);
+    margin: 0;
+    padding: 0;}
+
+#container {width: 80%;
+    
+    margin: auto;
+}
+
+/*********************estilo provisional de la nav*****************************/
+nav {position: sticky; /*****para que la barra quede arriba pegada*****/
+    top: 0;
+    z-index:99;}
+
+.topnav {
+    overflow: hidden;
+    background-color: #664949;
+    font-family: runas;
+    letter-spacing: 0.2em;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #eee6be;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #e6dba2;
+    color: #4e4a2f;
+    
+  }
+  
+  .topnav a.active {
+    background-color: #c0b371;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/*******************************************estilo de la hero section********************************************/
+#hero{background-image: url("../imagenes/inicio.jpg");
+    background-size: cover; /*estira la imagen para que ocupe el bloque entero*/
+    background-position: 66%;
+    height:95vh; /* 100vh sería el alto del dispositivo móvil, tablet o pc*/
+    position: relative;
+}
+#hero h1 {position: absolute;
+    top:20px;
+    left:80px;
+    font-family: runas;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    color: #504a2c;
+}
+#calltoaction{position: absolute;
+    bottom: 10px; 
+    left: 40px;
+    padding: 5px;
+    background-color: #a3995f;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    text-transform: uppercase; /****pone el texto en mayúscula***/
+}
+#calltoaction:hover{background-color: #cac083;
+    cursor: pointer;}
+
+.fa-arrow-up{position: fixed;
+            bottom: 20px;
+            right: 20px;
+            color: white;
+            border: 2px solid white;
+            padding: 3px;
+            border-radius: 50%;}
+
+/*****************************************estilo para la introduction section******************************/
+
+#introduction{font-family: texto;
+    color: white;
+padding:5%;
+text-align: justify;
+border-bottom: 1.5px solid #a3995f;    /******línea de separación*******/
+}
+#introduction h1{font-family: runas;
+    text-align: center;
+    font-size: 2em;
+}
+#perroygato {width: 45%;
+    float: left;  /****para que el texto este alrededor de la imagen****/
+    margin: 15px;
+}
+#introduction p:first-letter{font-size: 1.8em;
+
+}
+
+/******************************estilo de la sección a dos columnas, en este caso: perros***************************/
+#perros {font-family: texto;
+        color: white;
+    }
+#perros p:first-letter{font-size: 1.8em;
+                        }
+#perros h1 {font-family: runas;
+    font-size: 2em;
+    text-align: center;
+}
+.mitad {box-sizing: border-box; /***OJO:PARA QUE EL PADDING Y EL BORDE CUENTE DENTRO DEL WIDTH***/
+    width: 50%;
+    float: left;
+    padding: 2%;
+    }
+.resetear {clear: both;} /*deja de apilar cualquier cosa que tenga detrás*/
+#izquierda{padding: 30px 2%;
+}
+
+#perroderecha{width: 75%;
+    display: block;
+    margin: auto;}
+
+/*********************************************************estilo de gatos******************************/
+#gatos {padding: 0 1%;
+  border-bottom: 1.5px solid #a3995f;
+  font-family: texto;
+    color: white;
+}
+  }
+#gatos h1{font-family: runas;
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0; 
+}
+.cuarto{width:23%;
+        margin:1%;
+        padding: 1%;
+        float: left;
+        box-sizing: border-box;     /*************En el width entra padding y border box*/}
+.cuarto img{width:100%;
+        opacity: 0.5 ;
+        }
+.cuarto img:hover{opacity: 1;} /**regular opacidad**/
+
+.cuarto h2{font-family: texto ;
+  font-size: 1em;
+    color: #fff;
+    text-align: center;
+    }
+.cuarto a {
+      display: inline-block;
+      color: white;
+      margin: 7px 0;
+    }
+.cuarto a:hover {
+      color: rgb(195, 195, 195);
+    }
+
+/*************************************estilo de stories con snippets**************************/
+h1,p {color: white;}
+h1 {font-family: runas;
+    text-align: center;
+    font-size: 2em;
+    padding: 0;
+    padding: 30px 0;}
+.accordion {
+    background-color: #a3995f;
+    color: #eee6be;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: runas;
+    font-size: 1.5em;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #cac083;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    font-family: texto;
+    overflow: hidden;
+  }
+
+  
+#footer {
+  display: block;
+  color:#c0b371;
+  height: 13vh;
+  padding: 4vh 7%;
+  
+}
+
+#pie {
+  display: grid;
+  text-align: center;
+   padding:0;
+    background-color: #c0b371;
+    color: white;
+}
+
+.columna p {
+  margin: 5px;
+  margin-left: 0;
+}
+
+
+/*****************************************media queries*******************************************/
+@media only screen and (max-width:800px){
+    #perroygato, .mitad {width: 100%;}
+    #perroderecha {width: 50%;}
+    .cuarto{width: 46%;
+            margin: 2%;}
+}
+@media only screen and (max-width:500px){
+    .cuarto{width: 90%;
+            margin: 5%;}
+}
